@@ -8,7 +8,6 @@ times = [int(x) for x in times]
 dists = data[1].split(":")[1].split()
 dists = [int(x) for x in dists]
 
-
 def findways(time,dist):
     maxtime = time/2 + pow(pow(time/2,2)-dist, 1/2)
     if maxtime % 1 == 0:
@@ -38,6 +37,5 @@ for time in times:
     p2time = p2time + str(time)
 for dist in dists:
     p2dist = p2dist + str(dist)
-
 
 print(findways(int(p2time), int(p2dist)))
