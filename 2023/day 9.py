@@ -27,13 +27,12 @@ with open("day 9 input.txt") as my_file:
     data = my_file.read().splitlines()
 res = []
 res2 = []
-predictions = []
+
 for line in data:
     tree = makeTree([[int(x) for x in line.split()]])
     prediction = predict(tree)
     res.append(prediction[0][-1])
     res2.append(prediction[0][0])
-    predictions.append(prediction)
 
 print(sum(res))
 print(sum(res2))
