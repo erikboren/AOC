@@ -28,7 +28,7 @@ for y,row in enumerate(rows):
             low_points.append([y,x])
 print(res)
 
-print(low_points)
+
 basins = []
 
 def basin(low_point,):
@@ -68,5 +68,4 @@ for low_point in low_points:
         basins.sort(reverse=True)
         basins = basins[0:3]
         
-print(basins)
 print(math.prod(basins))
